@@ -1,0 +1,32 @@
+<%- include('layout') %>
+<div class="container">
+    <h2>All Posts</h2>
+    <% if (posts.length === 0) { %>
+        <p>No posts yet.</p>
+    <% } else { %>
+        <ul>
+            <% posts.forEach((post, index) => { %>
+                <li class="each">
+                    <div class="main">
+                        <h3><%= post.title %></h3>
+                        <p style="color: rgb(114, 22, 201);"><%- "-".repeat(30) %></p>
+                        <p style="color: black;"><%= post.content %></p>
+                    </div>  
+                    <form method="POST" action="/posts/<%= index %>/edit">
+                        <button type="submit" >Edit</button>
+                    </form><br><br>
+                    <form method="POST" action="/delete/<%= index %>">
+                        <button type="submit">Delete</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    <% } %>
+    <div class="new-post">
+        <a href="/new">Create New Post</a>
+    </div>  
+    <footer>
+        <p>&copy; 2023 My Blog</p>
+    </footer> 
+</div>
+

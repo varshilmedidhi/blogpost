@@ -1,0 +1,122 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: black !important  ;
+    color: blueviolet;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+.container{
+    display: inline;
+    text-align: center;
+    
+}
+.new-post{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.each{
+    display: block; /* or inline-block */
+    padding: 5px;
+    word-wrap: break-word; /* Allow text to wrap */
+    box-sizing: border-box; /* In */
+}
+/* General Container Styling */
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center; /* Optional */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each Post (li.each) Styling */
+li.each {
+ /* Light gray border */
+    padding: 15px;
+    margin-bottom: 20px;
+ /* Ensure padding and border are included in width */
+}
+
+li.each h3 {
+    margin-top: 0;
+}
+
+/* Form Button Styling */
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* New Post Link Styling */
+.new-post a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #008CBA; /* Blue */
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+.main{
+    width: 400px; 
+    height: 200px; 
+    background-color: grey; 
+    padding: 1rem; 
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px;
+    padding-bottom: 50px;
+}   
+
+#title{
+    height: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#content{
+    height: 80px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+/* Add more styles as needed */

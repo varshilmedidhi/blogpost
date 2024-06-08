@@ -1,0 +1,18 @@
+<%- include('layout') %>
+<div class="container">
+    <h2>Edit Post</h2>
+    <form method="post" action="/posts/<%= index %>/modified"> 
+        <div>
+            <label for="title" maxlength="60">Title:</label>
+            <input type="text" id="title" name="title" value="<%= post.title %>" required>
+        </div>
+        <div>
+            <label for="content" maxlength="300">Content:</label>
+            <textarea id="content" name="content" required><%= post.content %></textarea>
+        </div>  
+        <button type="submit">Save Changes</button >
+    </form>
+</div>
+
+
+

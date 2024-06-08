@@ -1,0 +1,18 @@
+    <%- include('layout') %>
+    <div class="container">
+        <h2>Create New Post</h2>
+        <form method="POST" action="/new">
+            <div>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" required maxlength="60">
+            </div>
+            <div>
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" required maxlength="300"></textarea>
+            </div>
+            <button type="submit">Create Post</button>
+        </form>
+        <footer>
+            <p>&copy; 2023 My Blog</p>
+        </footer> 
+    </div>
